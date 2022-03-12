@@ -1,2 +1,6 @@
 #!/bin/bash
-cat ./src/flag
+{
+
+  cat ./src/flag
+
+} | tee ./flag.txt

@@ -1,23 +1,27 @@
 #!/bin/bash
 
-# Check if a python env exists
-if [ -d env ]
-then
-  # Activate the existing python env
-  source ./env/bin/activate
-else
-  # Create a new python env
-  python3 -m venv ./env &> /dev/null
+{
 
-  # Activate the python env
-  source ./env/bin/activate
+  # Check if a python env exists
+  if [ -d env ]
+  then
+    # Activate the existing python env
+    source ./env/bin/activate
+  else
+    # Create a new python env
+    python3 -m venv ./env &> /dev/null
 
-  # Install required packages
-  pip install -r ./requirements.txt &> /dev/null
-fi
+    # Activate the python env
+    source ./env/bin/activate
 
-# Get the flag
-cat ./src/pw.txt | xargs -I {} python3 ./src/ende.py -d ./src/flag.txt.en {}
+    # Install required packages
+    pip install -r ./requirements.txt &> /dev/null
+  fi
 
-# Deactivate the python env
-deactivate
+  # Get the flag
+  cat ./src/pw.txt | xargs -I {} python3 ./src/ende.py -d ./src/flag.txt.en {}
+
+  # Deactivate the python env
+  deactivate
+
+} | tee ./flag.txt
