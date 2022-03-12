@@ -1,5 +1,4 @@
 #!/bin/bash
-
 {
 
   # Check if a python env exists
