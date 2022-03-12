@@ -1,2 +1,2 @@
 #!/bin/bash
-cat encryptedFlag.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+cat ./src/encryptedFlag.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'

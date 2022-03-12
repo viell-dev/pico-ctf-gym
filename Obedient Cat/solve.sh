@@ -1,2 +1,2 @@
 #!/bin/bash
-cat flag
+cat ./src/flag
