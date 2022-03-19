@@ -1,0 +1,9 @@
+Name: Obedient Cat | 5 points
+Tags: [Category: General Skills]
+AUTHOR: SYREAL
+
+Description:
+This file has a flag in plain sight (aka "in-the-clear").
+
+Files:
+flag

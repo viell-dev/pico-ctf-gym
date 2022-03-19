@@ -1,2 +1,7 @@
+Name: Nice netcat... | 15 points
+Tags: [Category: General Skills]
+AUTHOR: SYREAL
+
+Description
 There is a nice program that you can talk to by using this command in a shell:
 $ nc mercury.picoctf.net 22902, but it doesn't speak English...

@@ -1,0 +1,15 @@
+Name: Transformation | 20 points
+Tags: [Category: Reverse Engineering]
+AUTHOR: MADSTACKS
+
+Description
+I wonder what this really is...
+
+Files:
+enc
+
+Command (looks like python):
+''.join([chr((ord(flag[i]) << 8) + ord(flag[i + 1])) for i in range(0, len(flag), 2)])
+
+Notes:
+Ran the contnent of enc through CyberChef magic, seems to be UTF-16 BE.

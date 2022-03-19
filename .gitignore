@@ -1,3 +1,6 @@
+# Flag files
 flag.txt
 allFlags.txt
-env/
+
+# Python virtual environment
+.venv/

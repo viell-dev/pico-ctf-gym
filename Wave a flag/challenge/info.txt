@@ -1,0 +1,13 @@
+Name: Wave a flag | 10 points
+Tags: [Category: General Skills]
+AUTHOR: SYREAL
+
+Description:
+Can you invoke help flags for a tool or binary?
+This program has extraordinarily helpful information...
+
+Files:
+warm
+
+Notes:
+warm is a 64-bit executable

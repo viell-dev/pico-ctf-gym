@@ -1,0 +1,12 @@
+Name: Python Wrangling | 10 points
+Tags: [Category: General Skills]
+AUTHOR: SYREAL
+
+Description:
+Python scripts are invoked kind of like programs in the Terminal...
+Can you run this Python script using this password to get the flag?
+
+Files:
+ende.py
+flag.txt.en
+pw.txt

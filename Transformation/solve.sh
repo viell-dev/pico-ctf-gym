@@ -1,23 +1,21 @@
 #!/bin/bash
 {
 
-  # Check if a python env exists
-  if [ -d env ]
+  # Check if the python virtual environment doesn't exist
+  if ! [ -d ../.venv ]
   then
-    # Activate the existing python env
-    source ./env/bin/activate
-  else
-    # Create a new python env
-    python3 -m venv ./env &> /dev/null
-
-    # Activate the python env
-    source ./env/bin/activate
+    # Create a new python virtual environment quietly
+    python3 -m venv ../.venv &> /dev/null
   fi
 
-  # Get the flag
-  cat ./src/enc | xargs -I {} python3 ./decrypt.py "{}"
+  # Activate the python virtual environment
+  source ../.venv/bin/activate
 
-  # Deactivate the python env
+  # Pipe the contents of enc into decrypt.py as an argument
+  # decrypt.py will convert UTF-16 BE to UTF-8
+  cat ./challenge/enc | xargs -I {} python3 ./decrypt.py "{}"
+
+  # Deactivate the python virtual environment
   deactivate
 
-} | tee ./flag.txt
+} | tee ./flag.txt # Output to stdout and flag.txt

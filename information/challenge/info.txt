@@ -1,0 +1,6 @@
+Name: information | 10 points
+Tags: [Category: Forensics]
+AUTHOR: SUSIE
+
+Description
+Files can always be changed in a secret way. Can you find the flag?
