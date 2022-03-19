@@ -1,0 +1,14 @@
+Name: Stonks | 20 points
+Tags: [Category: Binary Exploitation]
+AUTHOR: MADSTACKS
+
+Description:
+I decided to try something noone else has before. I made a bot to automatically
+trade stonks for me using AI and machine learning. I wouldn't believe you if
+you told me it's unsecure!
+
+Files:
+vuln.c
+
+Commands:
+nc mercury.picoctf.net 16439
